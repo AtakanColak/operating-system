@@ -1,0 +1,15 @@
+# Copyright (C) 2017 Daniel Page <csdsp@bristol.ac.uk>
+#
+# Use of this source code is restricted per the CC BY-NC-ND license, a copy of 
+# which can be found via http://creativecommons.org (and should be included as 
+# LICENSE.txt within the associated archive or repository).
+
+# part 1: variables
+
+ CONSOLE_HOST     = 127.0.0.1
+ CONSOLE_PORT     = 1235
+
+# part 3: targets
+
+launch-console :
+	@nc ${CONSOLE_HOST} ${CONSOLE_PORT}
